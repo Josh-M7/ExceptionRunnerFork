@@ -29,7 +29,7 @@ public class Timer {
 	}
 	
 	public static long timeMe(long timeToWait) throws TimerException {
-		Long timeNow = null;
+		Long timeNow = System.currentTimeMillis();
 		try {
 		  if (timeToWait < 0) {
 			  throw new TimerException("Cannot be less than zero");
